@@ -114,7 +114,7 @@ func init() {
 
 ```
 
-![image-20181223125936969](/var/folders/27/4j7qwl0n383_wdy85h_txrzr0000gn/T/abnerworks.Typora/image-20181223125936969.png)
+![](https://ws2.sinaimg.cn/large/006tNbRwgy1fyi9zyqm2yj31bu0k84a2.jpg)
 
 ## Docker构建容器
 
@@ -142,7 +142,7 @@ func init() {
   - **-v ~/conf:/etc/mysql/conf.d**：将主机当前目录下的 conf/my.cnf 挂载到容器的 /etc/mysql/my.cnf。
   - **-v ~/logs:/logs**：将主机当前目录下的 logs 目录挂载到容器的 /logs。
   - **-v ~/data:/var/lib/mysql** ：将主机当前目录下的data目录挂载到容器的 /var/lib/mysql 。
-  - **-e MYSQL_ROOT_PASSWORD=123456：**初始化 root 用户的密码。
+  - **-e MYSQL_ROOT_PASSWORD=123456** : 初始化 root 用户的密码。
 
 + `node`镜像
 
@@ -211,4 +211,3 @@ docker build -t web_pro .
 docker run -p 8080:8080 -d web_pro
 ```
 
-![image-20181223170149382](/var/folders/27/4j7qwl0n383_wdy85h_txrzr0000gn/T/abnerworks.Typora/image-20181223170149382.png)
